@@ -170,45 +170,45 @@ function igrica() {
     }
 }
 /*
-/!* PAPIR *!/
-papir papir papir
+/!* PAPIR *!/a
+papir papir papir aaaaaaaa
 papir papir kamen
 papir papir makaze
 
 papir kamen papir
 papir kamen kamen
-papir kamen makaze
+papir kamen makaze aaaaaaaaaaaaa
 
 papir makaze papir
-papir makaze kamen
+papir makaze kamen aaaaaaa
 papir makaze makaze
 
 /!* KAMEN *!/
 kamen papir papir
 kamen papir kamen
-kamen papir makaze
+kamen papir makaze aaaaaaa
 
 kamen kamen papir
-kamen kamen kamen
+kamen kamen kamen aaaaaa
 kamen kamen makaze
 
-kamen makaze papir
+kamen makaze papir aaaaaaa
 kamen makaze kamen
 kamen makaze makaze
 
 /!* MAKAZE *!/
 
 makaze papir papir
-makaze papir kamen
+makaze papir kamen aaaaaaa
 makaze papir makaze
 
-makaze kamen papir
+makaze kamen papir aaaaaa
 makaze kamen kamen
 makaze kamen makaze
 
 makaze makaze papir
 makaze makaze kamen
-makaze makaze makaze
+makaze makaze makaze aaaaaa
 
 */
 
