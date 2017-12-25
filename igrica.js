@@ -45,8 +45,18 @@ debugger;
         igrica();
 
 
+
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'makaze' && treciIgrac === 'makaze') {
+        alert('Nereseno, nova igra!');
+        igrica();
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'makaze' && treciIgrac === 'kamen') {
+        alert('Nereseno, nova igra!');
+        igrica();
+
+
+
     } else if (prviIgrac === 'makaze' && drugiIgrac === 'papir' && treciIgrac === 'papir') {
-        rezultat = 'Pobednik je prvi igrac sa makazama.'
+        rezultat = 'Pobednik je prvi igrac sa makazama.';
     } else if (prviIgrac === 'makaze' && drugiIgrac === 'papir' && treciIgrac === 'makaze') {
         alert('Nereseno, nova igra!');
         igrica();
@@ -58,6 +68,12 @@ debugger;
     } else if (prviIgrac === 'makaze' && drugiIgrac === 'kamen' && treciIgrac === 'makaze') {
         rezultat = 'Pobednik je drugi igrac sa kamenom.';
 
+
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'makaze' && treciIgrac === 'papir') {
+        alert('Nereseno, nova igra!');
+        igrica();
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'makaze' && treciIgrac === 'kamen') {
+        rezultat = 'Treci igrac je pobednik sa kamenom.';
     }
     alert(rezultat);
 }
