@@ -26,7 +26,10 @@ console.log(osoba.ime + " " + osoba.prezime + " ima " + osoba.godine + " godina.
 var osoba2 = {
     godina_rodjenja: 1998
 };
-console.log("ima " + (2017-osoba2.godina_rodjenja));
+var datum = new Date();
+var godina = datum.getFullYear();
+
+console.log("ima " + (godina-osoba2.godina_rodjenja));
 
 /*
 3.
@@ -106,22 +109,113 @@ uvecaj();
 /*
 7. Prosiriti igru papir kamen makaze, iz treceg primera tako da sada ucestvuju tri igraca ukupno.
     Pokusati u ovom primeru koristiti Switch statement.*/
+
+
+function igrica() {
+
+    var prviIgrac = prompt("papir/kamen/makaze");
+    var drugiIgrac = prompt("papir/kamen/makaze");
+    var treciIgrac = prompt("papir/kamen/makaze");
+
+    if (prviIgrac === drugiIgrac && prviIgrac === treciIgrac || prviIgrac !== drugiIgrac && prviIgrac !== treciIgrac && drugiIgrac !== treciIgrac) {
+        rezultat = 'Nereseno!';
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'papir' && treciIgrac === 'kamen') {
+
+        igrica();
+
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'papir' && treciIgrac === 'makaze') {
+
+        rezultat = 'Treci igrac je pobedio sa makazama.';
+
+
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'kamen' && treciIgrac === 'papir') {
+
+        igrica();
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'kamen' && treciIgrac === 'kamen') {
+        rezultat = 'Prvi igrac je pobednik sa papirom.';
+
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'makaze' && treciIgrac === 'papir') {
+        rezultat = 'Drugi igrac je pobednik sa makazama';
+
+    } else if (prviIgrac === 'papir' && drugiIgrac === 'makaze' && treciIgrac === 'makaze') {
+        igrica();
+
+
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'papir' && treciIgrac === 'papir') {
+        igrica();
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'papir' && treciIgrac === 'kamen') {
+        igrica();
+
+
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'kamen' && treciIgrac === 'papir') {
+        rezultat = 'Pobednik je treci igrac sa papirom';
+    } else if (prviIgrac === 'kamen' && drugiIgrac === 'kamen' && treciIgrac === 'makaze') {
+        igrica();
+
+
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'papir' && treciIgrac === 'papir') {
+        rezultat = 'Pobednik je prvi igrac sa makazama.'
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'papir' && treciIgrac === 'makaze') {
+        igrica();
+
+
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'kamen' && treciIgrac === 'kamen') {
+        igrica();
+    } else if (prviIgrac === 'makaze' && drugiIgrac === 'kamen' && treciIgrac === 'makaze') {
+        rezultat = 'Pobednik je drugi igrac sa kamenom.';
+
+
+        console.log(rezultat);
+
+    }
+}
 /*
+/!* PAPIR *!/
+papir papir papir
+papir papir kamen
+papir papir makaze
 
+papir kamen papir
+papir kamen kamen
+papir kamen makaze
 
+papir makaze papir
+papir makaze kamen
+papir makaze makaze
 
+/!* KAMEN *!/
+kamen papir papir
+kamen papir kamen
+kamen papir makaze
 
+kamen kamen papir
+kamen kamen kamen
+kamen kamen makaze
 
+kamen makaze papir
+kamen makaze kamen
+kamen makaze makaze
 
+/!* MAKAZE *!/
 
+makaze papir papir
+makaze papir kamen
+makaze papir makaze
 
+makaze kamen papir
+makaze kamen kamen
+makaze kamen makaze
 
-
-
-
-
+makaze makaze papir
+makaze makaze kamen
+makaze makaze makaze
 
 */
+
+
+
+
+
 
 /*8. Koristeci Ternary operator (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 ispitati da li je jedan broj veci od drugog.
